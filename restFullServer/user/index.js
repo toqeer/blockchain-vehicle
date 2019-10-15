@@ -1,0 +1,10 @@
+exports.registerVehicle = require("./registerVehicle.js");
+exports.getAllVehicles = require("./getAllVehicles.js");
+exports.getAllVehicleOrders = require("./getAllVehicleOrders.js");
+exports.placeVehicleOrder = require("./placeVehicleOrder.js");
+exports.transferVehicle = require("./transferVehicle.js");
+exports.acceptTransferVehicle = require("./acceptTransferVehicle.js");
+exports.cancelTransferVehicle = require("./cancelTransferVehicle.js");
+exports.placeLicenseOrder = require("./placeLicenseOrder.js");
+exports.getAllLicenses = require("./getAllLicenses.js");
+exports.getAllLicenseOrders = require("./getAllLicenseOrders.js");

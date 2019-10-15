@@ -1,0 +1,72 @@
+/*
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * Order model for vehicle lifecycle
+ */
+namespace org.ksa.vehicle.manufacturer
+
+import org.vda.VehicleDetails
+import composer.base.Business
+import composer.base.User
+import composer.base.Manufacturer
+
+
+/**
+ * Status of an order
+ */
+enum OrderStatus {
+  o REQUESTED
+  o PLACED
+  o SCHEDULED_FOR_MANUFACTURE
+  o VIN_ASSIGNED
+  o OWNER_ASSIGNED
+  o DELIVERED
+}
+
+
+
+/**
+ * An order for a vehicle to be fulfilled by a manufacturer
+ * and dispatched to an orderer (User).
+ */
+asset Order identified by orderId {
+  o String orderId
+  o VehicleDetails vehicleDetails 
+  o OrderStatus orderStatus default='REQUESTED'
+  --> Manufacturer manufacturer
+  --> User orderer
+  //o UpdateOrderStatus[] statusUpdates optional 
+}
+
+/**
+ * Transaction to create an order
+ */
+transaction PlaceOrder {
+  o String orderId
+  o VehicleDetails vehicleDetails
+  --> Manufacturer manufacturer
+  --> User orderer
+}
+
+
+/**
+ * Transaction to update the status of an order
+ */
+transaction UpdateOrderStatus{
+  o OrderStatus orderStatus
+  o String vin optional
+  --> Order order
+}
+

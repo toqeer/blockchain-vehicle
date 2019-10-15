@@ -1,0 +1,74 @@
+/*
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+  * A library of standard reusable types
+  */
+namespace composer.base
+
+enum Gender {
+ o MALE
+ o FEMALE
+ o OTHER
+}
+
+abstract participant UserBase {
+  o String password
+  o String title optional
+  o String firstName  optional
+  o String lastName  optional
+  o String nic  optional
+  o Gender gender optional
+  o ContactDetails contactDetails optional
+}
+
+abstract participant Business {
+  o String password
+  o String title optional
+  o String firstName  optional
+  o String lastName  optional
+  o ContactDetails contactDetails optional
+}
+
+concept ContactDetails {
+  o String email  optional
+  o String mobilePhone  optional
+  o String homePhone optional
+  o Address address optional
+}
+
+/**
+ * A concept for a simple street address
+ */
+concept Address {
+  o String city optional
+  o String country optional
+  o String region optional
+  o String street optional
+  o String postalCode optional
+}
+
+
+participant User identified by email extends UserBase {
+  o String email
+}
+
+participant Ministory identified by mId extends Business {
+  o String mId
+}
+
+
+participant Manufacturer identified by companyId extends Business {
+  o String companyId
+}

@@ -1,0 +1,72 @@
+/*
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * Order model for vehicle lifecycle
+ */
+namespace org.ksa.vehicle.ministory
+
+import org.vda.VehicleDetails
+import org.license.LicenseDetails
+import composer.base.Business
+import composer.base.User
+import composer.base.Manufacturer
+import composer.base.Ministory
+
+
+/**
+ * Status of an order
+ */
+enum LicenseOrderStatus {
+  o REQUESTED
+  o ASSIGNED
+  o REJECTED
+
+}
+
+/**
+ * An order for a vehicle to be fulfilled by a manufacturer
+ * and dispatched to an orderer (User).
+ */
+asset LicenseOrder identified by orderId {
+  o String orderId
+  o LicenseDetails licenseDetails 
+  o LicenseOrderStatus licenseOrderStatus default='REQUESTED'
+  --> Ministory ministory
+  --> User orderer
+  //o UpdateOrderStatus[] statusUpdates optional 
+}
+
+/**
+ * Transaction to create an order
+ */
+transaction PlaceLicenseOrder {
+  o String orderId
+  o LicenseDetails licenseDetails
+  --> Ministory ministory
+  --> User orderer
+}
+
+
+/**
+ * Transaction to update the status of an order
+ */
+transaction UpdateLicenseOrderStatus{
+  o String licenseNumber optional
+  o String issueDate optional
+  o String expiryDate optional
+  o LicenseOrderStatus licenseOrderStatus
+  --> LicenseOrder licenseOrder
+  --> Ministory ministory
+}

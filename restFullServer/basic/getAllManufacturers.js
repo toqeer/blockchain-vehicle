@@ -5,7 +5,7 @@ async function getAllManufacturers(req,res) {
     options = {
         method: 'GET',
         url: 'http://localhost:3000/api/composer.base.Manufacturer',
-        headers: {accept: 'application/json'},
+        headers: {accept: 'application/json', 'X-Access-Token':'rhfu90aqbFQqsMDLGl3IQHUJwvit1EtBVjDfGGScMhGv7thYQTvsUuXZAO9c9Vr3'},
         json: true
     };
     

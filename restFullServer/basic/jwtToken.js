@@ -6,7 +6,7 @@ const SECRET_KEY = "ksaforvhiclesystem";
 function getToken(data) {
     return new Promise(async resolve => {
     
-        const  expiresIn  = 55* 60;
+        const  expiresIn  = 6*60* 60;
         const  accessToken  =  jwt.sign({ data:data }, SECRET_KEY, {
             expiresIn:  expiresIn
         });

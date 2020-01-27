@@ -1,5 +1,6 @@
 var request = require("request");
 var jwtToken = require('../basic/jwtToken.js');
+var postHistorian = require('../basic/postHistorian.js');
 
 async function updateLicenseOrderStatus(req,res) {
 
@@ -69,6 +70,18 @@ async function updateLicenseOrderStatus(req,res) {
             return res.status(response.statusCode).send(JSON.stringify({success: false, message: body.error.message}));
         }
         
+
+        var obj = {
+            transactionId : body.transactionId,
+            participantInvoking : "resource:composer.base.Ministory#"+mId,
+            assetLinked : "resource:org.ksa.vehicle.ministory.LicenseOrder#"+orderId,
+            transactionType : "UpdateLicenseOrderStatus",
+            transactionInvoked : "org.ksa.vehicle.ministory.UpdateLicenseOrderStatus#"+body.transactionId,
+            timestamp : new Date().toISOString()
+        };
+        postHistorian.postHistorian(obj);
+
+
         var result= {success: true, result: {message: "License Order Updated Successfully" , trxId: body.transactionId}};
         return res.send(JSON.stringify(result));
     });

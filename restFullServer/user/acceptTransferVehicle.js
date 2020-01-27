@@ -1,5 +1,6 @@
 var request = require("request");
 var jwtToken = require('../basic/jwtToken.js');
+var postHistorian = require('../basic/postHistorian.js');
 
 async function acceptTransferVehicle(req,res) {
 
@@ -40,6 +41,17 @@ async function acceptTransferVehicle(req,res) {
     if (response.statusCode!=200)
         return res.status(response.statusCode).send(JSON.stringify({success: false, message: body.error.message}));
     
+
+    var obj= {
+      transactionId : body.transactionId,
+      participantInvoking : "resource:composer.base.User#"+email,
+      assetLinked : "resource:org.vda.Vehicle#"+vIn,
+      transactionType : "VehicleTransferUpdateStatus",
+      transactionInvoked : "org.vda.VehicleTransferUpdateStatus#"+body.transactionId,
+      timestamp : new Date().toISOString()
+    };
+    postHistorian.postHistorian(obj);
+
     var result= {success: true, result: {message: "Vehicle Transfer Accepted Successfully", trxId: body.transactionId}};
     //console.log(body);
     return res.send(JSON.stringify(result));

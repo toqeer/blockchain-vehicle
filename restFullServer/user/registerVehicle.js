@@ -1,5 +1,6 @@
 var request = require("request");
 var jwtToken = require('../basic/jwtToken.js');
+var postHistorian = require('../basic/postHistorian.js');
 
 async function registerVehicle(req,res) {
 
@@ -47,6 +48,16 @@ async function registerVehicle(req,res) {
         return res.status(response.statusCode).send(JSON.stringify({success: false, message: body.error.message}));
     }
     
+    var obj= {
+      transactionId : body.transactionId,
+      participantInvoking : "resource:composer.base.User#"+email,
+      assetLinked : "resource:org.vda.Vehicle#"+vIn,
+      transactionType : "VehicleRegister",
+      transactionInvoked : "org.vda.VehicleRegister#"+body.transactionId,
+      timestamp : new Date().toISOString()
+    };
+    postHistorian.postHistorian(obj);
+
     var result= {success: true, result: {message: "Vehicle Registered Successfully", trxId: body.transactionId}};
     return res.send(JSON.stringify(result));
   });

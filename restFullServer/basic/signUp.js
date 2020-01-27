@@ -53,6 +53,38 @@ async function signUp(req,res) {
       json: true
     };
   }
+  else if(userType=='TAKAFUL'){
+
+    options = {
+      method: 'POST',
+      url: 'http://localhost:3000/api/composer.base.Takaful',
+      headers: {'content-type': 'application/json'},
+      body: {
+        "$class": "composer.base.Takaful",
+        "companyId": companyId,
+        "password": password,
+        "title": title,
+        "contactDetails": contactDetails
+      },
+      json: true
+    };
+  }
+  else if(userType=='FAHAS'){
+
+    options = {
+      method: 'POST',
+      url: 'http://localhost:3000/api/composer.base.Fahas',
+      headers: {'content-type': 'application/json'},
+      body: {
+        "$class": "composer.base.Fahas",
+        "companyId": companyId,
+        "password": password,
+        "title": title,
+        "contactDetails": contactDetails
+      },
+      json: true
+    };
+  }
   else{
     return res.status(422).send(JSON.stringify({success: false, message:'Invalid UserType'}));
   }

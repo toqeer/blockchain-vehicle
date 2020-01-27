@@ -32,6 +32,28 @@ async function logIn(req,res) {
             json: true
         };
     }
+    else if(userType=='TAKAFUL'){
+        data ={companyId:companyId};
+        var filter = {where:{companyId:companyId}};
+        options = {
+            method: 'GET',
+            url: 'http://localhost:3000/api/composer.base.Takaful',
+            qs: {filter: JSON.stringify(filter)},
+            headers: {accept: 'application/json'},
+            json: true
+        };
+    }
+    else if(userType=='FAHAS'){
+        data ={companyId:companyId};
+        var filter = {where:{companyId:companyId}};
+        options = {
+            method: 'GET',
+            url: 'http://localhost:3000/api/composer.base.Fahas',
+            qs: {filter: JSON.stringify(filter)},
+            headers: {accept: 'application/json'},
+            json: true
+        };
+    }
     else if(userType=='MINISTORY'){
         data ={mId:mId};
         var filter = {where:{mId:mId}};
@@ -65,7 +87,7 @@ async function logIn(req,res) {
 
 
         var jwt= await jwtToken.getToken(data);
-        return res.send(JSON.stringify({success: true, result: {jwt: jwt}}));
+        return res.send(JSON.stringify({success: true, result: {jwt: jwt, userType: userType}}));
     });
     
 

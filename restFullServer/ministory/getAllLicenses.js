@@ -26,7 +26,10 @@ async function getAllLicenses(req,res) {
         if (response.statusCode!=200)
             return res.status(response.statusCode).send(JSON.stringify({success: false, message: body.error.message}));
 
-
+        body.forEach(element => {
+            element.owner = element.owner.slice(element.owner.lastIndexOf('#') + 1);
+            element.issuer = element.issuer.slice(element.issuer.lastIndexOf('#') + 1);
+        });
         return res.send(JSON.stringify({success: true, result: body}));
     });
     

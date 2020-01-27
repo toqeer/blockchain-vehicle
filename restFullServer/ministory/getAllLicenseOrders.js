@@ -36,7 +36,10 @@ async function getAllLicenseOrders(req,res) {
         if (response.statusCode!=200)
             return res.status(response.statusCode).send(JSON.stringify({success: false, message: body.error.message}));
 
-
+        body.forEach(element => {
+            element.orderer = element.orderer.slice(element.orderer.lastIndexOf('#') + 1);
+            element.ministory = element.ministory.slice(element.ministory.lastIndexOf('#') + 1);
+        });
         return res.send(JSON.stringify({success: true, result: body}));
     });
     

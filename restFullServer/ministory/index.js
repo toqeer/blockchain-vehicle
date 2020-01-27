@@ -1,5 +1,10 @@
 exports.approveTransferVehicle = require("./approveTransferVehicle.js");
 exports.updateLicenseOrderStatus = require("./updateLicenseOrderStatus.js");
-exports.cancelLicense = require("./cancelLicense.js");
+exports.revokeLicense = require("./revokeLicense.js");
+exports.unRevokeLicense = require("./unRevokeLicense.js");
 exports.getAllLicenses = require("./getAllLicenses.js");
 exports.getAllLicenseOrders = require("./getAllLicenseOrders.js");
+exports.getAllTransferRequests = require("./getAllTransferRequests.js");
+exports.getUnApprovedVehicles = require("./getUnApprovedVehicles.js");
+exports.approveVehicle = require("./approveVehicle.js");
+exports.getAllTransactions = require("./getAllTransactions.js");

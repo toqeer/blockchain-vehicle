@@ -8,3 +8,6 @@ exports.cancelTransferVehicle = require("./cancelTransferVehicle.js");
 exports.placeLicenseOrder = require("./placeLicenseOrder.js");
 exports.getAllLicenses = require("./getAllLicenses.js");
 exports.getAllLicenseOrders = require("./getAllLicenseOrders.js");
+exports.getAllTransferRequests = require("./getAllTransferRequests.js");
+exports.getAllTransactions = require("./getAllTransactions.js");
+exports.getAllVehicleTransactions = require("./getAllVehicleTransactions.js");

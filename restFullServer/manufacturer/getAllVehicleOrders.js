@@ -3,6 +3,7 @@ var jwtToken = require('../basic/jwtToken.js');
 async function getAllVehicleOrders(req,res) {
 
     let orderStatus = req.query.orderStatus;
+    let orderStatusNot = req.query.orderStatusNot;
     //return res.send(JSON.stringify({success: true, result: orderStatus}));
     let token = req.headers['x-access-token'] || req.headers['authorization'];
     var verifyTokenResp= await jwtToken.verifyToken(token);
@@ -16,6 +17,8 @@ async function getAllVehicleOrders(req,res) {
 
     if(orderStatus){
         filter = {where:{and:[{manufacturer:'resource:composer.base.Manufacturer#'+companyId},{orderStatus:orderStatus}]}};  
+    }else if(orderStatusNot){
+        filter = {where:{and:[{manufacturer:'resource:composer.base.Manufacturer#'+companyId},{orderStatus:{"neq": orderStatusNot}}]}};  
     }else{
         filter = {where:{manufacturer:'resource:composer.base.Manufacturer#'+companyId}};
     }
@@ -38,7 +41,10 @@ async function getAllVehicleOrders(req,res) {
         if (response.statusCode!=200)
             return res.status(response.statusCode).send(JSON.stringify({success: false, message: body.error.message}));
 
-
+        body.forEach(element => {
+            element.manufacturer = element.manufacturer.slice(element.manufacturer.lastIndexOf('#') + 1);
+            element.orderer = element.orderer.slice(element.orderer.lastIndexOf('#') + 1);
+        });
         return res.send(JSON.stringify({success: true, result: body}));
     });
     

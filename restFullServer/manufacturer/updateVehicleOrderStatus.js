@@ -1,5 +1,6 @@
 var request = require("request");
 var jwtToken = require('../basic/jwtToken.js');
+var postHistorian = require('../basic/postHistorian.js');
 
 async function updateVehicleOrderStatus(req,res) {
 
@@ -16,7 +17,7 @@ async function updateVehicleOrderStatus(req,res) {
     var companyId=verifyTokenResp.data.companyId;
     var order = "resource:org.ksa.vehicle.manufacturer.Order#"+orderId;
 
-    if(orderStatus=='VIN_ASSIGNED'|| orderStatus=='OWNER_ASSIGNED'|| orderStatus=='DELIVERED'){
+    if(orderStatus=='VIN_ASSIGNED'){
         if(!vIn)
             return res.status(422).send(JSON.stringify({success: false, message:'vIn id not provided'}));
 
@@ -61,7 +62,22 @@ async function updateVehicleOrderStatus(req,res) {
         else
             return res.status(response.statusCode).send(JSON.stringify({success: false, message: body.error.message}));
         }
-        
+
+        if(body.vIn || vIn){
+
+            if(body.vIn)
+                vIn= body.vIn;
+                
+            var obj= {
+                transactionId : body.transactionId,
+                participantInvoking : "resource:composer.base.Manufacturer#"+companyId,
+                assetLinked : "resource:org.vda.Vehicle#"+vIn,
+                transactionType : "UpdateOrderStatus",
+                transactionInvoked : "org.ksa.vehicle.manufacturer.UpdateOrderStatus#"+body.transactionId,
+                timestamp : new Date().toISOString()
+            };
+            postHistorian.postHistorian(obj); 
+        }
         var result= {success: true, result: {message: "Vehicle Order Updated Successfully" , trxId: body.transactionId}};
         return res.send(JSON.stringify(result));
     });

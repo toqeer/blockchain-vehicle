@@ -1,5 +1,7 @@
 var request = require("request");
 var jwtToken = require('../basic/jwtToken.js');
+var postHistorian = require('../basic/postHistorian.js');
+
 
 async function placeLicenseOrder(req,res) {
 
@@ -45,6 +47,16 @@ async function placeLicenseOrder(req,res) {
         return res.status(response.statusCode).send(JSON.stringify({success: false, message: body.error.message}));
     }
     
+    var obj= {
+      transactionId : body.transactionId,
+      participantInvoking : "resource:composer.base.User#"+email,
+      assetLinked : "resource:org.ksa.vehicle.ministory.LicenseOrder#"+orderId,
+      transactionType : "PlaceLicenseOrder",
+      transactionInvoked : "org.ksa.vehicle.ministory.PlaceLicenseOrder#"+body.transactionId,
+      timestamp : new Date().toISOString()
+    };
+    postHistorian.postHistorian(obj);
+
     var result= {success: true, result: {message: "License Order Placed Successfully", trxId: body.transactionId}};
     return res.send(JSON.stringify(result));
   });

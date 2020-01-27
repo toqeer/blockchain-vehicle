@@ -1,0 +1,57 @@
+{
+	"name": "ap",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"apexcharts": "^3.6.12",
+		"axios": "^0.19.0",
+		"history": "^4.10.1",
+		"i": "^0.3.6",
+		"jsonwebtoken": "^8.5.1",
+		"loaders.css": "^0.1.2",
+		"node-sass": "^4.12.0",
+		"npm": "^6.12.0",
+		"react": "^16.8.6",
+		"react-apexcharts": "^1.3.3",
+		"react-dom": "^16.8.6",
+		"react-json-tree": "^0.11.2",
+		"react-loader": "^2.4.5",
+		"react-loaders": "^3.0.1",
+		"react-redux": "^7.0.3",
+		"react-router-dom": "^5.0.0",
+		"react-scripts": "2.1.8",
+		"react-slick": "^0.24.0",
+		"react-toastify": "^5.4.0",
+		"recharts": "^1.6.2",
+		"redux": "^4.0.1",
+		"redux-thunk": "^2.3.0",
+		"semantic-ui-calendar-react": "^0.15.3",
+		"semantic-ui-css": "^2.4.1",
+		"semantic-ui-react": "^0.87.1",
+		"slick-carousel": "^1.8.1",
+		"validate.js": "^0.13.1"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"sass-watch": "node-sass -w src/assets/auth/sass/style.scss src/assets/auth/css/style.css"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"proxy": "http://18.236.58.67:3001"
+}

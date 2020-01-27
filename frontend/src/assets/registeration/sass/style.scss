@@ -1,0 +1,55 @@
+@import "0-plugins/plugins-dir";
+
+#regulator {
+    @import "3-modules/modules-dir";
+    @import "variables";
+    @import "1-basic/basic-dir";
+    @import "2-layouts/layouts-dir";
+}
+
+.ui.list .list > .item,
+.ui.list > .item,
+ol.ui.list li,
+ul.ui.list li {
+    word-break: break-all !important;
+}
+
+.ui.dimmer {
+    background-color: transparent !important;
+}
+
+p {
+    word-break: break-all;
+}
+
+.transactions {
+    .ui.table {
+        border: none;
+        border-radius: 0px;
+
+        th {
+            border-radius: 0px;
+            background: #f2994a;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            color: #ffffff;
+        }
+
+        td {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            color: #4f4f4f;
+        }
+    }
+
+    .transactionId {
+        &:hover {
+            color: blue !important;
+            cursor: pointer;
+        }
+    }
+}

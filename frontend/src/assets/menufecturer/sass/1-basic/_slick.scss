@@ -1,0 +1,45 @@
+//Slick
+
+
+.slick-track {
+  // display: flex;
+}
+
+.slider-wrapper {
+  .slick-list {
+
+    overflow: visible !important;
+  }
+}
+
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}
+
+.slick-prev {
+  z-index: 1;
+}
+
+.slick-dots {
+  z-index: -1;
+}
+
+.slick-slider {
+  margin: 20px;
+
+}
+
+.slick-slide {
+  padding: 10px;
+  position: relative;
+
+  * {
+    outline: none !important;
+  }
+}
+
+// .slick-item {
+//   border-right: 1px solid rgb(190, 190, 190);
+// }

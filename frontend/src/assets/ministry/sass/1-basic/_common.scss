@@ -1,0 +1,132 @@
+.main-app {
+    height: 100vh;
+    background: #ffffff !important;
+    overflow-y: auto;
+
+    .components {
+        padding: 3rem 5rem;
+    }
+}
+
+
+
+.left-section {
+    padding-right: 3rem !important;
+}
+
+.right-section {
+    padding-left: 3rem !important;
+}
+
+label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    line-height: 21px;
+
+    color: #4F4F4F !important;
+}
+
+.arrow.down.icon {
+    float: right;
+    margin-right: -20px;
+    color: #a5a5a5;
+}
+
+.active {
+    .arrow.down.icon {
+        color: #141414;
+    }
+}
+
+.field {
+    margin-bottom: 2rem !important;
+}
+
+.toggler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .field {
+        margin: 0 !important;
+    }
+
+    .toggle-field {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .toggle {
+        vertical-align: middle !important;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        transform: rotate(180deg)
+    }
+
+    input label {
+        transform: rotate(180deg)
+    }
+
+    .ui.toggle.checkbox .box:before,
+    .ui.toggle.checkbox label:before {
+        border: 1px solid #bdc0be !important;
+        background: #ffffff;
+
+        &:hover {
+            border: 1px solid #219653 !important;
+        }
+    }
+
+    .ui.toggle.checkbox input:focus~.box:before,
+    .ui.toggle.checkbox input:focus~label:before {
+        border: 1px solid #219653;
+        background: #ffffff;
+    }
+
+    .ui.toggle.checkbox input:checked~.box:before,
+    .ui.toggle.checkbox input:checked~label:before {
+        background-color: #ffffff !important;
+        border: 1px solid #219653 !important;
+    }
+
+    .ui.toggle.checkbox input:focus:checked~.box:before,
+    .ui.toggle.checkbox input:focus:checked~label:before {
+        background-color: #ffffff !important;
+    }
+
+    .ui.toggle.checkbox .box:after,
+    .ui.toggle.checkbox label:after {
+        box-shadow: none;
+        width: 1.2rem !important;
+        height: 1.2rem !important;
+        top: 2px;
+        left: 2px;
+        // border: 1px solid #219653;
+        background: #C4C4C4;
+    }
+
+    .ui.toggle.checkbox input:checked~.box:after,
+    .ui.toggle.checkbox input:checked~label:after {
+        background: #219653;
+    }
+
+
+}
+
+// .ui.selection.dropdown {
+//     min-height: 42.69px;
+//     padding: .98571429em 2.1em .98571429em 1em;
+// }
+
+.dropdown,
+input {
+    min-height: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    border-radius: 9px !important;
+}

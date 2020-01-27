@@ -1,0 +1,33 @@
+.inspection {
+  h2 {
+    font-family: Lato !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 25px !important;
+    line-height: 36px !important;
+    color: #333333 !important;
+    margin-bottom: 2rem;
+
+    .sub.header {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      margin-top: 1rem;
+      color: #4F4F4F;
+    }
+  }
+
+  .ui.table {
+    border-radius: 0px;
+    border: none;
+  }
+
+  .ui.table thead th {
+    background: #F2994A;
+    border-radius: 0px;
+    font-family: Roboto;
+
+    color: #FFFFFF;
+  }
+}

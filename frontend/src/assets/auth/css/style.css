@@ -1,0 +1,248 @@
+#auth {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+#auth .error {
+  color: red;
+}
+#auth .ui.form .field {
+  margin-bottom: 2rem;
+}
+#auth .dropdown,
+#auth input {
+  min-height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border-radius: 9px !important;
+}
+#auth .left-section {
+  flex-basis: 50%;
+  background: linear-gradient(0deg, #219653, #219653);
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 10rem;
+  justify-content: space-between;
+}
+#auth .left-section .top-section {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+#auth .left-section .top-section hr {
+  width: 100%;
+}
+#auth .left-section .top-section .logo-menufec {
+  max-width: 100%;
+  margin-bottom: 1rem;
+  width: 150px;
+}
+#auth .left-section .top-section .logo-register {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+#auth .left-section .top-section .logo-ministry {
+  max-width: 100%;
+  margin-bottom: 1rem;
+  width: 150px;
+}
+#auth .left-section .top-section .logo-tagline {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 25px;
+  color: #ffffff;
+}
+#auth .left-section .top-section .icon {
+  margin-right: 1rem;
+}
+#auth .left-section .bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#auth .left-section .bottom-section h2 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+}
+#auth .left-section .bottom-section .sub-heading {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+#auth .left-section .bottom-section .button {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  color: #ffffff;
+  background: #1f8a4b;
+  box-shadow: 0px 4px 10px rgba(33, 150, 83, 0.5);
+  border-radius: 50px;
+  margin-bottom: 1rem;
+  width: 367px;
+}
+#auth .left-section .bottom-section .button.active {
+  background: #2dba69;
+  box-shadow: 0px 4px 10px rgba(33, 150, 83, 0.5);
+}
+#auth .left-section .bottom-section hr {
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+#auth .right-section {
+  flex-basis: 50%;
+  padding: 5rem 10rem;
+}
+#auth .right-section h2 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #4f4f4f;
+}
+#auth .right-section label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  color: #4f4f4f;
+}
+#auth .right-section p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4f4f4f;
+}
+#auth .right-section .forget-msg {
+  float: right;
+}
+#auth .right-section .button {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+  width: 367px;
+}
+#auth .right-section .button.signup {
+  background: #f2994a;
+  box-shadow: 0px 4px 10px rgba(242, 153, 74, 0.5);
+}
+#auth .right-section .divider {
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #4f4f4f;
+}
+#auth.login .button.login {
+  background: #1f8a4b;
+  box-shadow: 0px 4px 10px rgba(33, 150, 83, 0.5);
+}
+#auth.signup .go-back {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  color: #4f4f4f;
+}
+#auth.signup .button.signup {
+  background: #f2994a;
+  box-shadow: 0px 4px 10px rgba(242, 153, 74, 0.5);
+}
+
+.loader-hidden {
+  display: none;
+}
+
+.loader-active {
+  display: contents;
+}
+
+.page-loading {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  align-items: center;
+}
+.page-loading .ball-scale-multiple > div {
+  background-color: #219653;
+}
+
+.Toastify__toast {
+  word-break: break-all;
+}
+
+#regulator .card,
+.fahas .card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 10px !important;
+  border: none !important;
+  margin-bottom: 1rem !important;
+}
+#regulator .card .customer-name,
+.fahas .card .customer-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#regulator .card .customer-name .circle,
+.fahas .card .customer-name .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: red;
+}
+#regulator .card .button.start,
+.fahas .card .button.start {
+  font-family: Lato;
+  font-style: normal;
+  font-size: 14px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #f2994a;
+  border-radius: 50px;
+  color: #ffffff;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.modalbtn {
+  font-family: Lato;
+  font-style: normal;
+  font-size: 14px;
+  /* identical to box height */
+  display: flex !important;
+  align-items: center !important;
+  text-align: center !important;
+  background: #f2994a !important;
+  border-radius: 50px !important;
+  color: #ffffff !important;
+  margin: 0 auto !important;
+  margin-top: 1rem !important;
+}
+
+/*# sourceMappingURL=style.css.map */

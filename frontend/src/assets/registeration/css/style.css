@@ -1,0 +1,539 @@
+#regulator .topbar {
+  margin: 0px !important;
+  height: 60px;
+  left: 345px;
+  top: 0px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  z-index: 3; }
+  #regulator .topbar .brand img {
+    width: 22px;
+    margin-right: .6rem; }
+  #regulator .topbar .brand span {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #219653; }
+  #regulator .topbar .profile-wraper img,
+  #regulator .topbar .logout-wraper img {
+    width: 22px;
+    margin-right: .6rem; }
+  #regulator .topbar .profile-wraper span,
+  #regulator .topbar .logout-wraper span {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #333333; }
+#regulator .dashboard button.register {
+  background: #6FCF97;
+  border-radius: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(39, 174, 96, 0.5);
+  color: #FFFFFF;
+  margin-bottom: 3rem; }
+#regulator .owner-profile h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  margin-bottom: 2rem; }
+  #regulator .owner-profile h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4F4F4F; }
+#regulator .owner-profile button.save {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #6FCF97;
+  border-radius: 50px;
+  box-shadow: 0px 4px 10px rgba(39, 174, 96, 0.5); }
+#regulator .register-vehicle .left-section h2,
+#regulator .register-vehicle .right-section h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  margin-bottom: 2rem; }
+  #regulator .register-vehicle .left-section h2 .sub.header,
+  #regulator .register-vehicle .right-section h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4F4F4F; }
+#regulator .register-vehicle button.register {
+  background: #6FCF97;
+  border-radius: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  box-shadow: 0px 4px 10px rgba(39, 174, 96, 0.5);
+  color: #FFFFFF;
+  margin-bottom: 3rem; }
+#regulator .register-vehicle button.save {
+  background: #F2994A;
+  border-radius: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  box-shadow: 0px 4px 10px rgba(241, 158, 54, 0.5);
+  color: #FFFFFF; }
+#regulator .car-build h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  margin-bottom: 2rem; }
+  #regulator .car-build h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4F4F4F; }
+#regulator .car-build button.save {
+  background: #F2994A;
+  border-radius: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  box-shadow: 0px 4px 10px rgba(241, 158, 54, 0.5);
+  color: #FFFFFF; }
+#regulator .car-build button.register {
+  background: #6FCF97;
+  border-radius: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  box-shadow: 0px 4px 10px rgba(111, 207, 151, 0.5);
+  color: #FFFFFF; }
+#regulator .car-list h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem; }
+  #regulator .car-list h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4f4f4f; }
+#regulator .car-list hr {
+  width: 93%;
+  border: .7px solid #dededf;
+  margin-bottom: 2rem; }
+#regulator .car-list .card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 1rem; }
+  #regulator .car-list .card .header img {
+    width: 30px;
+    border: 1px solid #219653;
+    height: 30px;
+    margin-right: 10px;
+    padding: 5px;
+    cursor: pointer; }
+  #regulator .car-list .card .customer-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #regulator .car-list .card .customer-name .circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%; }
+  #regulator .car-list .card .button {
+    font-family: Lato;
+    font-style: normal;
+    font-size: 14px;
+    padding: 7px 10px;
+    line-height: 1;
+    /* identical to box height */
+    background: #f2994a;
+    border-radius: 50px;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-top: 1rem; }
+#regulator .car-profile h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  margin-bottom: 2rem; }
+  #regulator .car-profile h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4F4F4F; }
+#regulator .car-profile button.save {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #6FCF97;
+  border-radius: 50px;
+  box-shadow: 0px 4px 10px rgba(39, 174, 96, 0.5); }
+#regulator .maintanance h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  margin-bottom: 2rem; }
+  #regulator .maintanance h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4F4F4F; }
+#regulator .maintanance .ui.table {
+  border-radius: 0px;
+  border: none; }
+#regulator .maintanance .ui.table thead th {
+  background: #F2994A;
+  border-radius: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 15px;
+  color: #FFFFFF; }
+#regulator .maintanance .button {
+  border-radius: 50px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  color: #FFFFFF; }
+#regulator .maintanance .button.view-record {
+  background: #F2994A;
+  box-shadow: 0px 4px 10px rgba(241, 158, 54, 0.5); }
+#regulator .maintanance .button.register {
+  background: #6FCF97;
+  box-shadow: 0px 4px 10px rgba(39, 174, 96, 0.5); }
+#regulator .vehicle-transfer h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  padding-bottom: 1rem;
+  color: #333333 !important; }
+#regulator .vehicle-transfer .browse {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  width: 137px;
+  height: 50px;
+  color: #FFFFFF;
+  background: #6FCF97; }
+#regulator .vehicle-transfer .confirm {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #6FCF97;
+  border-radius: 50px;
+  box-shadow: 0px 4px 10px rgba(39, 174, 96, 0.5); }
+#regulator .transections h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  margin-bottom: 2rem; }
+  #regulator .transections h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4f4f4f; }
+#regulator .transections .ui.table {
+  border: none;
+  border-radius: 0px; }
+  #regulator .transections .ui.table th {
+    border-radius: 0px;
+    background: #f2994a;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffffff; }
+  #regulator .transections .ui.table td {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #4f4f4f; }
+#regulator .transections .transactionId:hover {
+  color: blue !important;
+  cursor: pointer; }
+#regulator .liscense-issue h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  padding-bottom: 1rem;
+  color: #333333 !important; }
+#regulator .liscense-issue .browse {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  width: 137px;
+  height: 50px;
+  color: #FFFFFF;
+  background: #6FCF97; }
+#regulator .liscense-issue .confirm {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #6FCF97;
+  border-radius: 50px;
+  box-shadow: 0px 4px 10px rgba(39, 174, 96, 0.5); }
+#regulator .transfer-requests .card .header img {
+  width: 30px;
+  border: 1px solid #219653;
+  height: 30px;
+  margin-right: 10px;
+  padding: 5px;
+  cursor: pointer; }
+#regulator .side-bar {
+  background: linear-gradient(0deg, #219653, #219653);
+  color: white;
+  width: 350px !important; }
+  #regulator .side-bar .logo {
+    font-size: 1.5rem;
+    font-weight: 800; }
+  #regulator .side-bar .title {
+    display: flex;
+    align-items: center; }
+  #regulator .side-bar .nav-items {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: #FFFFFF; }
+    #regulator .side-bar .nav-items .sidebar-icon {
+      float: left;
+      margin-right: 5px;
+      width: 20px; }
+  #regulator .side-bar .item {
+    line-height: 1.5 !important; }
+  #regulator .side-bar .ui.left.visible.sidebar,
+  #regulator .side-bar .ui.right.visible.sidebar {
+    box-shadow: none; }
+  #regulator .side-bar i {
+    float: left;
+    margin-right: 12px !important; }
+  #regulator .side-bar .active.item:hover,
+  #regulator .side-bar .active.item {
+    background: rgba(59, 64, 73, 0.5) !important; }
+  #regulator .side-bar .item:before {
+    display: none; }
+#regulator .footer {
+  border-top: 1px solid #e0e0e0;
+  width: 100%;
+  bottom: 0;
+  background: white; }
+#regulator body {
+  padding: 0px;
+  margin: 0px;
+  background: #ffffff !important;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px; }
+#regulator .main-app {
+  height: 100vh;
+  background: #ffffff !important;
+  overflow-y: auto; }
+  #regulator .main-app .components {
+    padding: 3rem 5rem; }
+#regulator .left-section {
+  padding-right: 3rem !important; }
+#regulator .right-section {
+  padding-left: 3rem !important; }
+#regulator label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  line-height: 21px;
+  color: #4f4f4f !important; }
+#regulator .arrow.down.icon {
+  float: right;
+  margin-right: -20px;
+  color: #a5a5a5; }
+#regulator .active .arrow.down.icon {
+  color: #141414; }
+#regulator .field {
+  margin-bottom: 2rem !important; }
+#regulator .toggler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #regulator .toggler .field {
+    margin: 0 !important; }
+  #regulator .toggler .toggle-field {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center; }
+  #regulator .toggler .toggle {
+    vertical-align: middle !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transform: rotate(180deg); }
+  #regulator .toggler input label {
+    transform: rotate(180deg); }
+  #regulator .toggler .ui.toggle.checkbox .box:before,
+  #regulator .toggler .ui.toggle.checkbox label:before {
+    border: 1px solid #bdc0be !important;
+    background: #ffffff; }
+    #regulator .toggler .ui.toggle.checkbox .box:before:hover,
+    #regulator .toggler .ui.toggle.checkbox label:before:hover {
+      border: 1px solid #219653 !important; }
+  #regulator .toggler .ui.toggle.checkbox input:focus ~ .box:before,
+  #regulator .toggler .ui.toggle.checkbox input:focus ~ label:before {
+    border: 1px solid #219653;
+    background: #ffffff; }
+  #regulator .toggler .ui.toggle.checkbox input:checked ~ .box:before,
+  #regulator .toggler .ui.toggle.checkbox input:checked ~ label:before {
+    background-color: #ffffff !important;
+    border: 1px solid #219653 !important; }
+  #regulator .toggler .ui.toggle.checkbox input:focus:checked ~ .box:before,
+  #regulator .toggler .ui.toggle.checkbox input:focus:checked ~ label:before {
+    background-color: #ffffff !important; }
+  #regulator .toggler .ui.toggle.checkbox input ~ .box:after,
+  #regulator .toggler .ui.toggle.checkbox input ~ label:after {
+    left: 0.123rem;
+    box-shadow: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    top: 2px;
+    background: #c6c6c6 linear-gradient(transparent, rgba(0, 0, 0, 0.05)); }
+  #regulator .toggler .ui.toggle.checkbox input:checked ~ .box:after,
+  #regulator .toggler .ui.toggle.checkbox input:checked ~ label:after {
+    left: 2.123rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    top: 2px; }
+  #regulator .toggler .ui.toggle.checkbox input:checked ~ .box:after,
+  #regulator .toggler .ui.toggle.checkbox input:checked ~ label:after {
+    background: #219653; }
+#regulator .dropdown,
+#regulator input {
+  min-height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border-radius: 9px !important; }
+#regulator .content,
+#regulator .item {
+  word-break: break-all !important; }
+#regulator .ui.visible.left.sidebar ~ .fixed,
+#regulator .ui.visible.left.sidebar ~ .pusher {
+  width: calc(100% - 350px); }
+#regulator .pushable > .pusher {
+  transition: none !important; }
+#regulator .ui.visible.left.sidebar ~ .fixed,
+#regulator .ui.visible.left.sidebar ~ .pusher {
+  transform: translate3d(350px, 0, 0) !important; }
+#regulator .slider-wrapper .slick-list {
+  overflow: visible !important; }
+#regulator .slick-prev:before,
+#regulator .slick-next:before {
+  color: black !important; }
+#regulator .slick-prev {
+  z-index: 1; }
+#regulator .slick-dots {
+  z-index: -1; }
+#regulator .slick-slider {
+  margin: 20px; }
+#regulator .slick-slide {
+  padding: 10px;
+  position: relative; }
+  #regulator .slick-slide * {
+    outline: none !important; }
+
+.ui.list .list > .item,
+.ui.list > .item,
+ol.ui.list li,
+ul.ui.list li {
+  word-break: break-all !important; }
+
+.ui.dimmer {
+  background-color: transparent !important; }
+
+p {
+  word-break: break-all; }
+
+.transactions .ui.table {
+  border: none;
+  border-radius: 0px; }
+  .transactions .ui.table th {
+    border-radius: 0px;
+    background: #f2994a;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffffff; }
+  .transactions .ui.table td {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #4f4f4f; }
+.transactions .transactionId:hover {
+  color: blue !important;
+  cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

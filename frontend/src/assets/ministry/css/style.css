@@ -1,0 +1,427 @@
+#ministry .topbar {
+  margin: 0px !important;
+  height: 60px;
+  left: 345px;
+  top: 0px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  z-index: 3; }
+  #ministry .topbar .brand img {
+    width: 22px;
+    margin-right: .6rem; }
+  #ministry .topbar .brand span {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #219653; }
+  #ministry .topbar .profile-wraper img,
+  #ministry .topbar .logout-wraper img {
+    width: 22px;
+    margin-right: .6rem; }
+  #ministry .topbar .profile-wraper span,
+  #ministry .topbar .logout-wraper span {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #333333; }
+#ministry .inspection h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 25px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  margin-bottom: 2rem; }
+  #ministry .inspection h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4F4F4F; }
+#ministry .inspection .ui.table {
+  border-radius: 0px;
+  border: none; }
+#ministry .inspection .ui.table thead th {
+  background: #F2994A;
+  border-radius: 0px;
+  font-family: Roboto;
+  color: #FFFFFF; }
+#ministry .transections h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 25px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  margin-bottom: 2rem; }
+  #ministry .transections h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4F4F4F; }
+#ministry .transections .ui.table {
+  border: none;
+  border-radius: 0px; }
+  #ministry .transections .ui.table th {
+    border-radius: 0px;
+    background: #F2994A;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: #FFFFFF; }
+  #ministry .transections .ui.table td {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #4F4F4F; }
+#ministry .transections .button.view-all {
+  box-shadow: 0px 4px 10px rgba(241, 158, 54, 0.5);
+  background: #F2994A;
+  border-radius: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF; }
+#ministry .transections .transactionId:hover {
+  color: blue !important;
+  cursor: pointer; }
+#ministry .liscense-issue h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 25px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  margin-bottom: 2rem; }
+  #ministry .liscense-issue h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4F4F4F; }
+#ministry .liscense-issue .browse {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  width: 137px;
+  height: 50px;
+  color: #FFFFFF;
+  background: #6FCF97; }
+#ministry .liscense-issue .download {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #6FCF97;
+  border-radius: 50px;
+  box-shadow: 0px 4px 10px rgba(39, 174, 96, 0.5); }
+#ministry .liscense-issue .warning {
+  color: #EB5757; }
+#ministry .new-requests .content {
+  word-break: break-all !important; }
+#ministry .new-requests h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem; }
+  #ministry .new-requests h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4f4f4f; }
+#ministry .new-requests hr {
+  width: 93%;
+  border: .7px solid #dededf;
+  margin-bottom: 2rem; }
+#ministry .new-requests .card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 1rem; }
+  #ministry .new-requests .card .header img {
+    width: 30px;
+    border: 1px solid #219653;
+    height: 30px;
+    margin-right: 10px;
+    padding: 5px;
+    cursor: pointer; }
+  #ministry .new-requests .card .customer-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #ministry .new-requests .card .customer-name .circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: red; }
+  #ministry .new-requests .card .button.start {
+    font-family: Lato;
+    font-style: normal;
+    font-size: 14px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #f2994a;
+    border-radius: 50px;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-top: 1rem; }
+#ministry .vehicle-voilation h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 25px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  margin-bottom: 2rem; }
+  #ministry .vehicle-voilation h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4F4F4F; }
+#ministry .vehicle-voilation .send {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #6FCF97;
+  border-radius: 50px;
+  box-shadow: 0px 4px 10px rgba(39, 174, 96, 0.5); }
+#ministry .vehicle-voilation .warning {
+  color: #EB5757; }
+#ministry .car-list h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem; }
+  #ministry .car-list h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4f4f4f; }
+#ministry .car-list hr {
+  width: 93%;
+  border: .7px solid #dededf;
+  margin-bottom: 2rem; }
+#ministry .car-list .card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 1rem; }
+  #ministry .car-list .card .header img {
+    width: 30px;
+    border: 1px solid #219653;
+    height: 30px;
+    margin-right: 10px;
+    padding: 5px;
+    cursor: pointer; }
+  #ministry .car-list .card .customer-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #ministry .car-list .card .customer-name .circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%; }
+  #ministry .car-list .card .button {
+    font-family: Lato;
+    font-style: normal;
+    font-size: 14px;
+    padding: 7px 10px;
+    line-height: 1;
+    /* identical to box height */
+    background: #f2994a;
+    border-radius: 50px;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-top: 1rem; }
+#ministry .side-bar {
+  background: linear-gradient(0deg, #219653, #219653);
+  color: white;
+  width: 350px !important; }
+  #ministry .side-bar .logo {
+    font-size: 1.5rem;
+    font-weight: 800; }
+  #ministry .side-bar .title {
+    display: flex;
+    align-items: center; }
+  #ministry .side-bar .nav-items {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: #FFFFFF; }
+    #ministry .side-bar .nav-items .sidebar-icon {
+      float: left;
+      margin-right: 5px;
+      width: 20px; }
+  #ministry .side-bar .item {
+    line-height: 1.5 !important; }
+  #ministry .side-bar .ui.left.visible.sidebar,
+  #ministry .side-bar .ui.right.visible.sidebar {
+    box-shadow: none; }
+  #ministry .side-bar i {
+    float: left;
+    margin-right: 12px !important; }
+  #ministry .side-bar .active.item:hover,
+  #ministry .side-bar .active.item {
+    background: rgba(59, 64, 73, 0.5) !important; }
+  #ministry .side-bar .item:before {
+    display: none; }
+#ministry .footer {
+  border-top: 1px solid #e0e0e0;
+  width: 100%;
+  bottom: 0;
+  background: white; }
+#ministry body {
+  padding: 0px;
+  margin: 0px;
+  background: #ffffff !important;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px; }
+#ministry .ui.dimmer {
+  background-color: transparent !important; }
+#ministry .main-app {
+  height: 100vh;
+  background: #ffffff !important;
+  overflow-y: auto; }
+  #ministry .main-app .components {
+    padding: 3rem 5rem; }
+#ministry .left-section {
+  padding-right: 3rem !important; }
+#ministry .right-section {
+  padding-left: 3rem !important; }
+#ministry label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  line-height: 21px;
+  color: #4F4F4F !important; }
+#ministry .arrow.down.icon {
+  float: right;
+  margin-right: -20px;
+  color: #a5a5a5; }
+#ministry .active .arrow.down.icon {
+  color: #141414; }
+#ministry .field {
+  margin-bottom: 2rem !important; }
+#ministry .toggler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #ministry .toggler .field {
+    margin: 0 !important; }
+  #ministry .toggler .toggle-field {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center; }
+  #ministry .toggler .toggle {
+    vertical-align: middle !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transform: rotate(180deg); }
+  #ministry .toggler input label {
+    transform: rotate(180deg); }
+  #ministry .toggler .ui.toggle.checkbox .box:before,
+  #ministry .toggler .ui.toggle.checkbox label:before {
+    border: 1px solid #bdc0be !important;
+    background: #ffffff; }
+    #ministry .toggler .ui.toggle.checkbox .box:before:hover,
+    #ministry .toggler .ui.toggle.checkbox label:before:hover {
+      border: 1px solid #219653 !important; }
+  #ministry .toggler .ui.toggle.checkbox input:focus ~ .box:before,
+  #ministry .toggler .ui.toggle.checkbox input:focus ~ label:before {
+    border: 1px solid #219653;
+    background: #ffffff; }
+  #ministry .toggler .ui.toggle.checkbox input:checked ~ .box:before,
+  #ministry .toggler .ui.toggle.checkbox input:checked ~ label:before {
+    background-color: #ffffff !important;
+    border: 1px solid #219653 !important; }
+  #ministry .toggler .ui.toggle.checkbox input:focus:checked ~ .box:before,
+  #ministry .toggler .ui.toggle.checkbox input:focus:checked ~ label:before {
+    background-color: #ffffff !important; }
+  #ministry .toggler .ui.toggle.checkbox .box:after,
+  #ministry .toggler .ui.toggle.checkbox label:after {
+    box-shadow: none;
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+    top: 2px;
+    left: 2px;
+    background: #C4C4C4; }
+  #ministry .toggler .ui.toggle.checkbox input:checked ~ .box:after,
+  #ministry .toggler .ui.toggle.checkbox input:checked ~ label:after {
+    background: #219653; }
+#ministry .dropdown,
+#ministry input {
+  min-height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border-radius: 9px !important; }
+#ministry .ui.visible.left.sidebar ~ .fixed,
+#ministry .ui.visible.left.sidebar ~ .pusher {
+  width: calc(100% - 350px); }
+#ministry .pushable > .pusher {
+  transition: none !important; }
+#ministry .ui.visible.left.sidebar ~ .fixed,
+#ministry .ui.visible.left.sidebar ~ .pusher {
+  transform: translate3d(350px, 0, 0) !important; }
+#ministry .ui.dimmer {
+  background-color: none !important; }
+#ministry .slider-wrapper .slick-list {
+  overflow: visible !important; }
+#ministry .slick-prev:before,
+#ministry .slick-next:before {
+  color: black !important; }
+#ministry .slick-prev {
+  z-index: 1; }
+#ministry .slick-dots {
+  z-index: -1; }
+#ministry .slick-slider {
+  margin: 20px; }
+#ministry .slick-slide {
+  padding: 10px;
+  position: relative; }
+  #ministry .slick-slide * {
+    outline: none !important; }
+
+/*# sourceMappingURL=style.css.map */

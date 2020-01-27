@@ -1,0 +1,13 @@
+.ui.visible.left.sidebar~.fixed,
+.ui.visible.left.sidebar~.pusher {
+    width: calc(100% - 350px);
+}
+
+.pushable>.pusher {
+    transition: none !important;
+}
+
+.ui.visible.left.sidebar~.fixed,
+.ui.visible.left.sidebar~.pusher {
+    transform: translate3d(350px, 0, 0) !important;
+}

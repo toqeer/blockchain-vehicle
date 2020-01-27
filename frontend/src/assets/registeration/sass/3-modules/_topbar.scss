@@ -1,0 +1,51 @@
+.topbar {
+    margin: 0px !important;
+    height: 60px;
+    left: 345px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    z-index: 3;
+    // position: fixed;
+    // width: 100%;
+    // left: 0;
+    // z-index: 1;
+
+    .brand {
+        img {
+            width: 22px;
+            margin-right: .6rem;
+            ;
+        }
+
+        span {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            color: #219653;
+        }
+    }
+
+    .profile-wraper,
+    .logout-wraper {
+        img {
+            width: 22px;
+            margin-right: .6rem;
+        }
+
+        span {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+
+            color: #333333;
+        }
+    }
+}

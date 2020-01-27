@@ -1,0 +1,487 @@
+#menufecturer .topbar {
+  margin: 0px !important;
+  height: 60px;
+  left: 345px;
+  top: 0px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  z-index: 3; }
+  #menufecturer .topbar .brand img {
+    width: 22px;
+    margin-right: .6rem; }
+  #menufecturer .topbar .brand span {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #219653; }
+  #menufecturer .topbar .profile-wraper img,
+  #menufecturer .topbar .logout-wraper img {
+    width: 22px;
+    margin-right: .6rem; }
+  #menufecturer .topbar .profile-wraper span,
+  #menufecturer .topbar .logout-wraper span {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #333333; }
+#menufecturer .new-orders h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem; }
+  #menufecturer .new-orders h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4f4f4f; }
+#menufecturer .new-orders hr {
+  width: 93%;
+  border: .7px solid #dededf;
+  margin-bottom: 2rem; }
+#menufecturer .new-orders .card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: none;
+  min-height: 450px;
+  margin-bottom: 1rem; }
+  #menufecturer .new-orders .card .customer-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #menufecturer .new-orders .card .customer-name .circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%; }
+  #menufecturer .new-orders .card .button.start {
+    font-family: Lato;
+    font-style: normal;
+    font-size: 14px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #f2994a;
+    border-radius: 50px;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-top: 1rem; }
+#menufecturer .in-process h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem; }
+  #menufecturer .in-process h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4F4F4F; }
+#menufecturer .in-process hr {
+  width: 93%;
+  border: .7px solid #dededf;
+  margin-bottom: 2rem; }
+#menufecturer .in-process .card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: none; }
+  #menufecturer .in-process .card .customer-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #menufecturer .in-process .card .customer-name .circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: red; }
+  #menufecturer .in-process .card .button.start {
+    font-family: Lato;
+    font-style: normal;
+    font-size: 14px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #F2994A;
+    border-radius: 50px;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 1rem; }
+  #menufecturer .in-process .card .ui.list .list > .item > .content,
+  #menufecturer .in-process .card .ui.list > .item > .content {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333; }
+    #menufecturer .in-process .card .ui.list .list > .item > .content span,
+    #menufecturer .in-process .card .ui.list > .item > .content span {
+      float: right; }
+  #menufecturer .in-process .card .ui.list .list > .item .header,
+  #menufecturer .in-process .card .ui.list > .item .header {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4F4F4F;
+    margin-bottom: 1rem; }
+#menufecturer .shippings h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem; }
+  #menufecturer .shippings h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4F4F4F; }
+#menufecturer .shippings hr {
+  width: 93%;
+  border: .7px solid #dededf;
+  margin-bottom: 2rem; }
+#menufecturer .shippings .card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: none; }
+  #menufecturer .shippings .card .customer-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #menufecturer .shippings .card .customer-name .circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: red; }
+  #menufecturer .shippings .card .button.start {
+    font-family: Lato;
+    font-style: normal;
+    font-size: 14px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #F2994A;
+    border-radius: 50px;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 1rem; }
+  #menufecturer .shippings .card .ui.list .list > .item > .content,
+  #menufecturer .shippings .card .ui.list > .item > .content {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333; }
+    #menufecturer .shippings .card .ui.list .list > .item > .content span,
+    #menufecturer .shippings .card .ui.list > .item > .content span {
+      float: right; }
+  #menufecturer .shippings .card .ui.list .list > .item .header,
+  #menufecturer .shippings .card .ui.list > .item .header {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4F4F4F;
+    margin-bottom: 1rem; }
+#menufecturer .completed h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem; }
+  #menufecturer .completed h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4f4f4f; }
+#menufecturer .completed hr {
+  width: 93%;
+  border: .7px solid #dededf;
+  margin-bottom: 2rem; }
+#menufecturer .completed .card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 1rem; }
+  #menufecturer .completed .card .customer-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #menufecturer .completed .card .customer-name .circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: red; }
+  #menufecturer .completed .card .button.start {
+    font-family: Lato;
+    font-style: normal;
+    font-size: 14px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #f2994a;
+    border-radius: 50px;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-top: 1rem; }
+  #menufecturer .completed .card .ui.list .list > .item > .content,
+  #menufecturer .completed .card .ui.list > .item > .content {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333; }
+    #menufecturer .completed .card .ui.list .list > .item > .content span,
+    #menufecturer .completed .card .ui.list > .item > .content span {
+      float: right; }
+  #menufecturer .completed .card .ui.list .list > .item .header,
+  #menufecturer .completed .card .ui.list > .item .header {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4f4f4f;
+    margin-bottom: 1rem; }
+#menufecturer .transections h2 {
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 25px !important;
+  line-height: 36px !important;
+  color: #333333 !important;
+  margin-bottom: 2rem; }
+  #menufecturer .transections h2 .sub.header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #4F4F4F; }
+#menufecturer .transections .ui.table {
+  border: none;
+  border-radius: 0px; }
+  #menufecturer .transections .ui.table th {
+    border-radius: 0px;
+    background: #F2994A;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: #FFFFFF; }
+  #menufecturer .transections .ui.table td {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #4F4F4F; }
+#menufecturer .transections .button.view-all {
+  box-shadow: 0px 4px 10px rgba(241, 158, 54, 0.5);
+  background: #F2994A;
+  border-radius: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF; }
+#menufecturer .transections .transactionId:hover {
+  color: blue !important;
+  cursor: pointer; }
+#menufecturer .side-bar {
+  background: linear-gradient(0deg, #219653, #219653);
+  color: white;
+  width: 350px !important; }
+  #menufecturer .side-bar .logo {
+    font-size: 1.5rem;
+    font-weight: 800; }
+  #menufecturer .side-bar .title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF; }
+    #menufecturer .side-bar .title img {
+      width: 50px;
+      margin-right: 10px; }
+  #menufecturer .side-bar .nav-items {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: #FFFFFF; }
+    #menufecturer .side-bar .nav-items .sidebar-icon {
+      float: left;
+      margin-right: 5px;
+      width: 20px; }
+  #menufecturer .side-bar .item {
+    line-height: 1.5 !important; }
+  #menufecturer .side-bar .ui.left.visible.sidebar,
+  #menufecturer .side-bar .ui.right.visible.sidebar {
+    box-shadow: none; }
+  #menufecturer .side-bar i {
+    float: left;
+    margin-right: 12px !important; }
+  #menufecturer .side-bar .active.item:hover,
+  #menufecturer .side-bar .active.item {
+    background: rgba(59, 64, 73, 0.5) !important; }
+  #menufecturer .side-bar .item:before {
+    display: none; }
+#menufecturer .footer {
+  border-top: 1px solid #E0E0E0; }
+#menufecturer body {
+  padding: 0px;
+  margin: 0px;
+  background: #ffffff !important;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px; }
+#menufecturer .main-app {
+  height: 100vh;
+  background: #ffffff !important;
+  overflow-y: auto; }
+  #menufecturer .main-app .components {
+    padding: 3rem 5rem; }
+#menufecturer .left-section {
+  padding-right: 3rem !important; }
+#menufecturer .right-section {
+  padding-left: 3rem !important; }
+#menufecturer label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  line-height: 21px;
+  color: #4f4f4f !important; }
+#menufecturer .arrow.down.icon {
+  float: right;
+  margin-right: -20px;
+  color: #a5a5a5; }
+#menufecturer .active .arrow.down.icon {
+  color: #141414; }
+#menufecturer .toggler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #menufecturer .toggler .field {
+    margin: 0 !important; }
+  #menufecturer .toggler .toggle-field {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center; }
+  #menufecturer .toggler .toggle {
+    vertical-align: middle !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transform: rotate(180deg); }
+  #menufecturer .toggler input label {
+    transform: rotate(180deg); }
+  #menufecturer .toggler .ui.toggle.checkbox .box:before,
+  #menufecturer .toggler .ui.toggle.checkbox label:before {
+    border: 1px solid #bdc0be !important;
+    background: #ffffff; }
+    #menufecturer .toggler .ui.toggle.checkbox .box:before:hover,
+    #menufecturer .toggler .ui.toggle.checkbox label:before:hover {
+      border: 1px solid #219653 !important; }
+  #menufecturer .toggler .ui.toggle.checkbox input:focus ~ .box:before,
+  #menufecturer .toggler .ui.toggle.checkbox input:focus ~ label:before {
+    border: 1px solid #219653;
+    background: #ffffff; }
+  #menufecturer .toggler .ui.toggle.checkbox input:checked ~ .box:before,
+  #menufecturer .toggler .ui.toggle.checkbox input:checked ~ label:before {
+    background-color: #ffffff !important;
+    border: 1px solid #219653 !important; }
+  #menufecturer .toggler .ui.toggle.checkbox input:focus:checked ~ .box:before,
+  #menufecturer .toggler .ui.toggle.checkbox input:focus:checked ~ label:before {
+    background-color: #ffffff !important; }
+  #menufecturer .toggler .ui.toggle.checkbox input ~ .box:after,
+  #menufecturer .toggler .ui.toggle.checkbox input ~ label:after {
+    left: 0.123rem;
+    box-shadow: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    top: 2px;
+    background: #c6c6c6 linear-gradient(transparent, rgba(0, 0, 0, 0.05)); }
+  #menufecturer .toggler .ui.toggle.checkbox input:checked ~ .box:after,
+  #menufecturer .toggler .ui.toggle.checkbox input:checked ~ label:after {
+    left: 2.123rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    top: 2px; }
+  #menufecturer .toggler .ui.toggle.checkbox input:checked ~ .box:after,
+  #menufecturer .toggler .ui.toggle.checkbox input:checked ~ label:after {
+    background: #219653; }
+#menufecturer .dropdown,
+#menufecturer input {
+  min-height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border-radius: 9px !important; }
+#menufecturer .content {
+  word-break: break-all !important; }
+#menufecturer .ui.visible.left.sidebar ~ .fixed,
+#menufecturer .ui.visible.left.sidebar ~ .pusher {
+  width: calc(100% - 350px); }
+#menufecturer .pushable > .pusher {
+  transition: none !important; }
+#menufecturer .ui.visible.left.sidebar ~ .fixed,
+#menufecturer .ui.visible.left.sidebar ~ .pusher {
+  transform: translate3d(350px, 0, 0) !important; }
+#menufecturer .slider-wrapper .slick-list {
+  overflow: visible !important; }
+#menufecturer .slick-prev:before,
+#menufecturer .slick-next:before {
+  color: black !important; }
+#menufecturer .slick-prev {
+  z-index: 1; }
+#menufecturer .slick-dots {
+  z-index: -1; }
+#menufecturer .slick-slider {
+  margin: 20px; }
+#menufecturer .slick-slide {
+  padding: 10px;
+  position: relative; }
+  #menufecturer .slick-slide * {
+    outline: none !important; }
+
+/*# sourceMappingURL=style.css.map */

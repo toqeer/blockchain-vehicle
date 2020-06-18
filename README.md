@@ -13,11 +13,11 @@ This project is an initiative towards vehicle tracking system in Saudi Arabia vi
 
 This prototype is linux dependent. (recomended distro Ubuntu 16.04,18.04)
 
-### pre-requisites
+### Pre-requisites
 * Hyperledger Composer
 * Node-JS v10 or later than v10
 
-### installing/running network
+### Installing/running network
 considering you have installed pre-requisites.
 
 ##### Initiating blockchain network

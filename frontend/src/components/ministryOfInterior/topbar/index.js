@@ -21,7 +21,7 @@ class TopBar extends Component {
         </Menu.Item>
         <Menu.Item className="brand">
           <img src={require('../../../assets/images/Icons/brand-icon.png')} alt="brand-icon" />
-          <span>Ministry of Interior</span>
+          <span>Vehicle Registeration Managment</span>
         </Menu.Item>
         <Menu.Menu position="right">
           <Menu.Item className="profile-wraper">

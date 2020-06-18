@@ -45,13 +45,8 @@ const menuItems = [
 		icon: 'transfer'
 	},
 	{
-		name: 'Issue of Licence ',
+		name: 'Issue of Lisence ',
 		link: 'vehicle-registeration/lisence-issue',
-		icon: 'file'
-	},
-	{
-		name: 'All Licence Requests',
-		link: 'vehicle-registeration/all-lisence-requests',
 		icon: 'file'
 	},
 	{

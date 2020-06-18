@@ -23,9 +23,7 @@ import {
   GET_ALL_TRANSACTION_DETAILS,
   GET_VEHICLE_TRANSACTION,
   GET_VEHICLE_TAKAFUL_RECORD,
-  GET_VEHICLE_FAHAS_RECORD,
-  GET_LICENSES_USER,
-  GET_LICENSES_USER_LOADING
+  GET_VEHICLE_FAHAS_RECORD
 } from "../../../constants/actionTypes";
 const initState = {
   allVehicles: null,
@@ -45,9 +43,7 @@ const initState = {
   userTrasferRequestsLoading: false,
   approveUserTransferLoading: false,
   rejectUserTransferLoading: false,
-  userTransactionsLoading: false,
-  UserAllLicenseData: [],
-  UserAllLicenseLoading: false
+  userTransactionsLoading: false
 };
 
 export default function(state = initState, action) {
@@ -99,13 +95,6 @@ export default function(state = initState, action) {
     case PLACE_LISCENCE_ORDER:
       return { ...state, placeLiscenceOrderLoading: false };
 
-    case GET_LICENSES_USER_LOADING:
-      return { ...state, UserAllLicenseLoading: action.payload };
-    case GET_LICENSES_USER:
-      return { ...state, UserAllLicenseData: action.payload };
-
-    // export const GET_LICENSES_USER='GET_LICENSES_USER';
-    // export const GET_LICENSES_USER_LOADING='GET_LICENSES_USER_LOADING';
     case GET_USER_VEHICLE_ORDERS_LOADING:
       return { ...state, userVehicleOrdersLoading: true };
 

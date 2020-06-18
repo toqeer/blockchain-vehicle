@@ -25,9 +25,7 @@ import {
   GET_ALL_TRANSACTION_DETAILS,
   GET_VEHICLE_TRANSACTION,
   GET_VEHICLE_TAKAFUL_RECORD,
-  GET_VEHICLE_FAHAS_RECORD,
-  GET_LICENSES_USER,
-  GET_LICENSES_USER_LOADING
+  GET_VEHICLE_FAHAS_RECORD
 } from "../../../constants/actionTypes";
 import { toast } from "react-toastify";
 import { customToast } from "../../../components/common";
@@ -436,33 +434,7 @@ export const getVehicleFahasRecord = vIn => async dispatch => {
       });
     });
 };
-//get all licenses
-export const getAlllicenseUser = () => async dispatch => {
-  dispatch({
-    type: GET_LICENSES_USER_LOADING,
-    payload: true
-  });
-  axios
-    .get(`${API_PATH}/getAllLicenses`, {})
-    .then(res => {
-      console.log("getAllLicenses", res.data.result);
-      dispatch({
-        type: GET_LICENSES_USER_LOADING,
-        payload: false
-      });
-      dispatch({
-        type: GET_LICENSES_USER,
-        payload: res.data.result
-      });
-    })
-    .catch(err => {
-      dispatch({
-        type: GET_LICENSES_USER_LOADING,
-        payload: false
-      });
-    });
-};
- 
+
 // GET ALL VEHICLES LOADING
 export const getAllVehiclesLoading = () => {
   return {
